@@ -1,4 +1,4 @@
-# SynthVTuner
+# Tuner
 A script for tuning individual notes microtonally in SynthV.
 
 ## How to use
