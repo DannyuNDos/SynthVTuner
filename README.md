@@ -9,7 +9,7 @@ Copy the attached JavaScript file to the `scripts` folder, as shown in https://m
 ### Execution
 In the SynthV Studio, select the notes you want to tune microtonally, then execute `Scripts > Playback > Tuner` in the menu. If this doesn't appear in the menu, execute `Scripts > Rescan`, and try again.
 
-A dialog will appear. Enter just intervals (`3/2`, `5/4`, etc.) into each tone, and press "OK". The tonic (indicated by the unison `1/1`) will always be treated as the default "C" tone.
+A dialog will appear. Enter just intervals (`3/2`, `5/4`, etc.) into each tone, and press "OK". The unison (`1/1`) will always be treated as the default "C" tone.
 
 ## Caveats
 You need SynthV Pro to use this script.
