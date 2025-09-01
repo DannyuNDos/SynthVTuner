@@ -14,7 +14,7 @@ A dialog will appear. Enter just intervals (`3/2`, `5/4`, etc.) or edosteps (``1
 ### Configuration
 In the attached JavaScript file, you'll notice that there is the constant `tuning` in midst of the code.
 
-There are 5 presets, namely 12edo, 19edo meantone\[12\] sLsLLsLsLsLL, 22edo pajara\[12\] LLsLLLLLsLLL, 31edo meantone\[12\] sLsLLsLsLsLL, and a 19-limit just intonation. The preset enabled as the default is the 22edo one, while the others are commented out by the prepended double slash (`\\`). You may enable another preset by removing `\\` in front of the preset and commenting out the other presets.
+There are 5 presets, namely 12edo, 19edo meantone\[12\] sLsLLsLsLsLL, 22edo pajara\[12\] LLsLLLLLsLLL, 31edo meantone\[12\] sLsLLsLsLsLL, and a 19-limit just intonation. The preset enabled as the default is the 22edo one, while the others are commented out by the prepended double slash (`//`). You may enable another preset by removing `//` in front of the preset and commenting out the other presets.
 
 You may also add a new preset by the exactly name format, namely the stringified intervals intercalated by a single whitespace (` `). Again, be sure to comment out the other presets.
 
