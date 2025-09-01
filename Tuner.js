@@ -30,7 +30,7 @@ function strToPitch(str) {
 //const tuning = "0`12 1`12 2`12 3`12 4`12 5`12 6`12 7`12 8`12 9`12 10`12 11`12"; // 12edo
 //const tuning = "0`19 1`19 3`19 4`19 6`19 8`19 9`19 11`19 12`19 14`19 15`19 17`19"; // 19edo meantone[12] sLsLLsLsLsLL
 const tuning = "0`22 2`22 4`22 5`22 7`22 9`22 11`22 13`22 15`22 16`22 18`22 20`22"; // 22edo pajara[12] LLsLLLLLsLLL
-//const tuning = "0`31 2`31 5`31 8`31 10`31 13`31 15`31 18`31 20`31 23`31 25`31 28`31"; // 31edo meantone[12] sLsLLsLsLsLL
+//const tuning = "0`31 2`31 5`31 7`31 10`31 13`31 15`31 18`31 20`31 23`31 25`31 28`31"; // 31edo meantone[12] sLsLLsLsLsLL
 //const tuning = "1/1 17/16 9/8 19/16 5/4 4/3 17/12 3/2 19/12 5/3 16/9 17/9"; // 19-limit just intonation
 
 function main() {
@@ -123,3 +123,4 @@ function main() {
     }
     SV.finish();
 };
+
