@@ -34,7 +34,6 @@ const tuning = "0`22 2`22 4`22 5`22 7`22 9`22 11`22 13`22 15`22 16`22 18`22 20`2
 //const tuning = "1/1 17/16 9/8 19/16 5/4 4/3 17/12 3/2 19/12 5/3 16/9 17/9"; // 19-limit just intonation
 
 function main() {
-    const noteGroup = SV.getMainEditor().getCurrentGroup().getTarget();
     const selectedNotes = SV.getMainEditor().getSelection().getSelectedNotes();
     if (0 == selectedNotes.length) {
         SV.showMessageBox("Tuner", "Select notes before execution of this script.");
@@ -44,7 +43,7 @@ function main() {
     const intervals = tuning.split(" ");
     const form = {
         "title": "Tuner",
-        "message": "Enter just interval ratios.",
+        "message": "Enter just interval ratios or edosteps.",
         "buttons": "OkCancel",
         "widgets": [
             {
@@ -112,16 +111,13 @@ function main() {
     const result = SV.showCustomDialog(form);
 
     if (result.status) {
-        const automation = noteGroup.getParameter("pitchDelta");
         for (var i = 0; i < selectedNotes.length; ++i) {
             const note = selectedNotes[i];
             const pitch = Math.round(note.getPitch());
             const pitchMod = pitch % 12;
             const newPitch = strToPitch(result.answers[pitchMod.toString()]) - 100 * pitchMod;
             if (null != newPitch) {
-                automation.remove(note.getOnset(), note.getEnd());
-                automation.add(note.getOnset(), newPitch);
-                automation.add(note.getEnd() - 1, newPitch);
+                note.setDetune(newPitch);
             }
         }
     }
