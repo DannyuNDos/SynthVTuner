@@ -19,10 +19,6 @@ There are 5 presets, namely 12edo, 19edo meantone\[12\] sLsLLsLsLsLL, 22edo paja
 You may also add a new preset by the exactly name format, namely the stringified intervals intercalated by a single whitespace (` `). Again, be sure to comment out the other presets.
 
 ## Caveats
-You need SynthV Studio Pro or SynthV Studio 2 Pro to use this script.
-
-In this script, the method of tuning is to employ the "pitch deviation" automation. As such, every pitch deviation you already wrote into the automation will be erased.
-
-Using this script along with SynthV Pro's native note detuning (which is able to detune notes by 25 cents) is not advisable.
+You need SynthV Studio 2 Pro to use this script.
 
 This script is guaranteed to work only under the standalone version of SynthV. Under the plugin version of SynthV, this script may suffer compatibility issues.
