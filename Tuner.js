@@ -12,7 +12,7 @@ function getClientInfo() {
 const TITLE = "TUNER";
 const MESSAGE1 = "Enter intervals in just intonation or edosteps.";
 const MESSAGE2 = "Select the notes you want to tune, and press the button below.";
-const PRESET = "Preset"
+const PRESET = "Presets"
 const BUTTON_TEXT = "Tune";
 function getTranslations(langCode) {
     if (langCode == "ja-jp") {
@@ -56,7 +56,7 @@ function getTranslations(langCode) {
             [TITLE, "ACCORDEUR"],
             [MESSAGE1, "Notez les intervalles en l'intonation juste ou edosteps."],
             [MESSAGE2, "Sélectionnez des notes, et appuyez sur le bouton."],
-            [PRESET, "Pré-réglé"],
+            [PRESET, "Pré-réglés"],
             [BUTTON_TEXT, "Réglez"]
         ];
     }
@@ -65,7 +65,7 @@ function getTranslations(langCode) {
             [TITLE, "AFINADOR"],
             [MESSAGE1, "Escriba los intervalos en el temperamento justo o edosteps."],
             [MESSAGE2, "Seleccione notas, y apriete el botón."],
-            [PRESET, "Preajuste"],
+            [PRESET, "Preajustes"],
             [BUTTON_TEXT, "Afine"]
         ];
     }
@@ -157,6 +157,10 @@ function getSidePanelSectionState() {
             {
                 "type": "Label",
                 "text": "2. " + SV.T(MESSAGE2)
+            },
+            {
+                "type": "Label",
+                "text": SV.T(PRESET) + ":"
             },
             {
                 "type": "Container",
