@@ -133,7 +133,7 @@ var buttonValue = SV.create("WidgetValue");
 buttonValue.setValueChangeCallback(function () {
     const notes = SV.getMainEditor().getSelection().getSelectedNotes();
     for (var i = 0; i < notes.length; ++i) {
-        const semitones = (notes[i].getPitch() - 60) % 12;
+        const semitones = ((notes[i].getPitch() - 60) % 12 + 12) % 12;
         notes[i].setDetune(strToPitch(textValues[textValues_keys[semitones]].getValue()) - 100 * semitones);
     }
 });
