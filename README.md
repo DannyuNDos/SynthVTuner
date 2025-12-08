@@ -4,7 +4,7 @@ A script for tuning individual notes microtonally in SynthV.
 ## How to use
 
 ### Installation
-Copy the attached JavaScript file to the `scripts` folder, as shown in https://sv2.docs.dreamtonics.com/en/scripts.
+Copy the attached JavaScript file to the `scripts` folder, as accessible by executing `Scripts > Open Scripts Folder` in the menu of SynthV.
 
 ### Execution
 In the SynthV Studio, select the notes you want to tune microtonally, enter just intervals (`3/2`, `5/4`, etc.) or edosteps (`11\19`, `13\22`, etc.) into each textbox in the `Tuner` sub-panel in the scripts panel, and then press the button. If this doesn't appear in the scripts panel, execute `Scripts > Rescan`, and try again.
