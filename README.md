@@ -9,7 +9,7 @@ Copy the attached JavaScript file to the `scripts` folder, as accessible by exec
 ### Execution
 Navigate into the scripts panel. You'll see the "Tuner" sub-panel. If this doesn't appear in the scripts panel, execute `Scripts > Rescan` in the menu, and try again.
 
-Select the notes you want to tune microtonally, then enter just intervals (`3/2`, `5/4`, etc.) or edosteps (`11\19`, `13\22`, etc.) into the "Intervals list" text area, and then press the button. The bottommost interval (typically an octave) will be the period.
+Select the notes you want to tune microtonally, then enter just intervals (`3/2`, `5/4`, etc.) or edosteps (`11\19`, `13\22`, etc.) into the "Intervals list" text area, and then press the button. Then the selected notes will be snapped by the inputted intervals, where the bottommost interval (typically an octave) will be the period.
 
 You can adjust the base note (that is, the note targeted by the unison interval) in the "Base note" textbox. This is set to `C4` by default.
 
