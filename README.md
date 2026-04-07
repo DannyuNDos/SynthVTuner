@@ -14,11 +14,11 @@ Select the notes you want to tune microtonally, then enter just intervals (`3/2`
 You can adjust the base note (that is, the note targeted by the unison interval) in the "Base note" textbox. This is set to `C4` by default.
 
 ### Configuration
-In the attached JavaScript file, you'll notice that there is the constant `tuning` in midst of the code.
+In the attached JavaScript file, you'll notice that there is the constant `tuning` declared in midst of the code.
 
 There are 7 presets, namely 12edo, 19edo meantone\[12\] sLsLLsLsLsLL, 22edo pajara\[12\] LLsLLLLLsLLL, 31edo meantone\[12\] sLsLLsLsLsLL, 12edo subset of 72edo, a 19-limit just intonation, and a 7-limit just intonation.
 
-You may add a new preset by the exactly same format, namely the stringified intervals. When adding a preset consisting of edosteps, be sure to escape the backslash (`\\`).
+You can add a new preset by the exactly same format, namely the stringified intervals. When adding a preset consisting of edosteps, be sure to escape the backslash (`\\`).
 
 ## Caveats
 You need SynthV Studio 2 Pro, with version of at least 2.1.2, to use this script.
